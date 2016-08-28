@@ -6,7 +6,7 @@ categories: research
 ---
 *在标书中放一块数据挖掘的芯片，如果支持自己的假说，会有一定的说服力。如何用最快的方法搜索呢？以下我来介绍*
 
-#1. STRING数据库的利用
+# 1. STRING数据库的利用
 - 我认为string数据库在这方面要优于david，例如将“ICK”输入STING数据库
 
 ![title](https://leanote.com/api/file/getImage?fileId=579d848bab644133ed033c0c)
@@ -27,7 +27,7 @@ categories: research
 
 ![title](https://leanote.com/api/file/getImage?fileId=579d8610ab644133ed033c2a)
 
-#2. GEO2R在线分析
+# 2. GEO2R在线分析
 
 - 找一个芯片，如果是GSD，则可以在线分析热图，如果没有，只能用GEO2R。如下图
 
@@ -56,7 +56,7 @@ categories: research
 
 ![title](https://leanote.com/api/file/getImage?fileId=579d8a42ab644133ed033c94)
 
-#3. 本地作图
+# 3. 本地作图
 
 - 然后就可以ctrl+f查找目的基因了。我一般会用到之前在string上保存的那些基因（要去除重复）。用函数vlookup([教程](http://jingyan.baidu.com/article/73c3ce28db4da4e50243d95c.html))来匹配p-val和logFC，这样就出来结果了，好像都不太理想。
 
