@@ -19,4 +19,6 @@ categeries: beginning
 
 - 通过爬虫来学习python
 
+- [正则表达式](http://deerchao.net/tutorials/regex/regex.htm)
+
 - 未完待续
