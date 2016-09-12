@@ -9,7 +9,8 @@ categeries: beginning
 - linux基础操作学习：
 
 > [LINUX基础操作——LINUX的基本常用命令](http://www.coder51aa.pub/article/304811.html)
-[libux达人养成记Ⅰ](http://www.imooc.com/learn/175)
+
+>[libux达人养成记Ⅰ](http://www.imooc.com/learn/175)
 
 - html+PHP+wordpress一起学习，并以建立小组站点为练习实践。
 
