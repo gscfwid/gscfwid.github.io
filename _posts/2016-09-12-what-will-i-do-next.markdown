@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我现在所欠缺的
+title: 我现在所欠缺的(2016-09-17更新)
 date: 2016-09-12
 categeries: beginning
 ---
