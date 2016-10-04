@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 临床数据库探索一
+title: Clinic Databases Exploring (1)
 categories: research
 ---
 近些时间在网上看到了不少“secondary analysis”，利用之前临床试验的原始数据进行再次分析，可以是多个临床试验之间的交叉比较，这种文章可以发到5分以上。下面是一篇代表作：
@@ -22,6 +22,7 @@ Biolincc数据库大多是临床研究的原始数据，当初我在探索的时
 通过谷歌之后发现，不论是国内还是国外的“科普blog”或者“丁香园论坛”，都没有相关的教程。因此只能自己来探索（这是最花时间的过程，而再次需要强调的是，英文太重要了）
 
 以下是用到的资料：
+
 [Headbook of biolincc](https://www.dropbox.com/s/twrxsyqp0sxmzq2/The_Biolincc_Handbook.pdf?dl=0)
 
 ![headbook](http://ocmk8pdgu.bkt.clouddn.com/b027a172ea09583470dc558e0378beea.png)
