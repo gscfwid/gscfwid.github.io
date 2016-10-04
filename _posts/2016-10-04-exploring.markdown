@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Clinic Databases Exploring (1)
+data: 2016-10-04 20:10
 categories: research
 ---
 近些时间在网上看到了不少“secondary analysis”，利用之前临床试验的原始数据进行再次分析，可以是多个临床试验之间的交叉比较，这种文章可以发到5分以上。下面是一篇代表作：
