@@ -12,7 +12,7 @@ categories: research
 
 这是一个什么样的数据库呢？
 
-它是在NHLBI旗下的一个数据库，而NHLBI又是NHI的一个附属机构。这些机构的目的是为了解决人类的健康，在这个基础上建立了非常多的计划，著名的TCGA也在其中。通过下图可以有个很好的了解。
+它是在NHLBI旗下的一个数据库，而NHLBI又是NHI的一个附属机构。这些机构的目的是为了解决人类的健康问题，在这个基础上建立了非常多的计划，著名的TCGA也在其中。通过下图可以有个很好的了解。
 
 ![databases](http://ocmk8pdgu.bkt.clouddn.com/70a3ec35134291b2c3e7933a12b43f28.png)
 
