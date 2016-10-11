@@ -1,6 +1,6 @@
 ---
 layout: post
-data: 2016-10-09 16:20
+date: 2016-10-09 16:20
 title: 规培应对计划
 categeries: 工作
 ---
@@ -33,11 +33,22 @@ categeries: 工作
 1. 写一个脚本便于将排班计划导入住培本（初期计划用R语言实现半自动，后期用python实现全自动）。
 
 目前已基本实现初期计划。先将用到的教程罗列在此：
+
 >- 首先是导入excel的方法：[R语言如何导入Excel的数据](https://www.zhihu.com/question/20950125),选择用了一种简单的方法：[readxl](https://github.com/hadley/readxl);
 >- 然后是循环语句合并文件：[R语言读取文件夹下文件并进行合并数据生成总数据文件](http://blog.sina.com.cn/s/blog_46d621c00101l66x.html);
 >- 最后是[R语言取子集的几种方法](http://www.ats.ucla.edu/stat/r/faq/subset_R.htm) 。
 
-具体方法：循环读取文件--->合并表格--->筛选子集。
+具体思路：循环读取文件--->合并表格--->筛选子集。
+
+前提条件：将所有文件以一个文件夹的形式放在工作目录；如D\为工作目录，D\test文件夹下有以下文件
+
+![files](http://ocmk8pdgu.bkt.clouddn.com/1f62a109833d5d5ab5017022e21aa8af.png)
+
+每个文件打开是这样的：
+
+![file](http://ocmk8pdgu.bkt.clouddn.com/37caf8a0de8ce6f677ecad8724dab709.png)
+
+逐行在R语言下运行以下代码：
 
 ```R
 install.packages("readxl") ##安装readxl包
@@ -51,15 +62,20 @@ merge.data = merge.data[,1:12] ##有的excel会把表格后面的备注读取，
 names(merge.data) = c(1:12) ##统一所有文件的colnames(这里由于readxl没有header的相关参数，所以需要这么做，以后这里是需要改进的地方)
 for(i in 2:n){ ##建立循环
   new.data = read_excel(dir[i])
-  new.data = new.data[1:12]
-  new.data = c(1:12) ##以上三部同merge.data
+  new.data = new.data[,1:12]
+  names(new.data) = c(1:12) ##以上三部同merge.data
   merge.data = rbind(merge.data,new.data)
 }
 gao.data = merge.data[which(merge.data$`11`=="（高）"),] ##筛选我自己的rows
 write.table(gao.data,"gao.txt",sep = "\t") ##导出txt，然后用excel读取，完成
 ```
+最后我得到的文件（gao.txt)：
 
+![final](http://ocmk8pdgu.bkt.clouddn.com/8fc09b886e95bcf54789c2540510db46.png)
+
+- 将要合并的文件以文件夹的形式放在work direction
 2. 关键几个操作需要特殊记录（在排班表上看不出来）：
+
 >- 喉罩
 >- 动静脉穿刺
 >- 血液回收
