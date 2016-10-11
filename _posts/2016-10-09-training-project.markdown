@@ -46,7 +46,7 @@ categeries: 工作
 
 每个文件打开是这样的：
 
-![file](http://ocmk8pdgu.bkt.clouddn.com/37caf8a0de8ce6f677ecad8724dab709.png)
+![filess](http://ocmk8pdgu.bkt.clouddn.com/8b7b7ff1c01240f23bbe30ad11827a47.png)
 
 逐行在R语言下运行以下代码：
 
