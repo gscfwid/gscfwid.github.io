@@ -73,7 +73,6 @@ write.table(gao.data,"gao.txt",sep = "\t") ##导出txt，然后用excel读取，
 
 ![final](http://ocmk8pdgu.bkt.clouddn.com/8fc09b886e95bcf54789c2540510db46.png)
 
-- 将要合并的文件以文件夹的形式放在work direction
 2. 关键几个操作需要特殊记录（在排班表上看不出来）：
 
 >- 喉罩
