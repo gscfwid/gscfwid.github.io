@@ -34,13 +34,14 @@ Logistic regression with an interaction term of two predictor variables**
 
 ![interaction](http://ocmk8pdgu.bkt.clouddn.com/e0e155e42158f439cd19ec2f7101ebd9.png)
 
-出处链接：http://www.ats.ucla.edu/stat/mult_pkg/faq/general/odds_ratio.htm
+出处链接：[http://www.ats.ucla.edu/stat/mult_pkg/faq/general/odds_ratio.htm]
 
 用我们上面那个公式：logit(p) = log(p/(1-p))= β0 + β1×X1 + β2×X2 + β3×X1×X2 + β4×X1^2，假设X1是一个二分类变量，可以取0或者1。当X1=0时，X2的oddis radio=β2，当X1=1时，X2的Oddis radio=β2+β3，这说明，X2在X1取不同值时，对结果的影响的程度是不同的。这时候，X1×X2的Oddis Radio怎么算呢？其实是exp(β2+β3)/exp(β2)。这就可以解释PaO2 × PaO2的OR=1了。
 
-但我觉得原文的表达还是欠妥当：Te ftted model supported our hypothesis that the eﬀect of PaO2 on mortality risk was in quadratic form(Table 2). The odds ratio for the quadratic term was 1 (p< 0.001)。其实主要是因为p < 0.001，并不是OR=1。
+但我觉得原文的表达还是欠妥当：The fitted model supported our hypothesis that the eﬀect of PaO2 on mortality risk was in quadratic form(Table 2). The odds ratio for the quadratic term was 1 (p< 0.001)。其实主要是因为p < 0.001，并不是OR=1。
 
 本文还是有很多问题的，比如：
+
 - 作者显然是为了做PaO2而做的，因为虽然作者探索了很多个因素之间的关系（如PaO2× age, and PaO2× SOFA），但二次项只做了PaO2（大家可以再详细读一下，如果我理解错就当没说）
 - 与PaO2混杂的因素作者并未全包括进去，其中非常重要的是：是否使用机械通气，吸氧或者空气；吸氧的浓度。这些因素其实可以用另外一个变量代替：氧合指数，但是氧合指数估计早已被研究烂了。
 - 以上两点，足以成为本文的死穴，根本无解，这就是我们以后在研究中，一开始就要考虑的东西。临床的指导，对数据挖掘的开展非常重要，否则，再多的数据只是一堆垃圾。
