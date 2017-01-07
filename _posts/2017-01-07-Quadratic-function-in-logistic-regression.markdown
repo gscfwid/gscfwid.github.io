@@ -4,7 +4,7 @@ date: 2017-01-07 21:30
 title: 逻辑回归中的二项函数
 categeries: research
 ---
-最近阅读ZZH的mimic数据分析文章，看到以下这篇：
+最近阅读ZZH大神的mimic数据分析文章，看到以下这篇：
 ![zzh](http://ocmk8pdgu.bkt.clouddn.com/3a7df55b5fe64ae02e0f78f8160261eb.png)
 （*dropbox中已收录，oxygentherapy*）
 
