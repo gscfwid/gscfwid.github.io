@@ -24,12 +24,15 @@ categeries: research
 - 数据库提取将是一个难点，涉及到日期的计算（ICU停留超过24h的才纳入）以及如何将诊断标准翻译为SQL语言？
 
 - **亮点**：作者将测量值的连续变量分为多个二分类变量，可看下图：
+
 ![creatine](http://ocmk8pdgu.bkt.clouddn.com/0f30ba823e1c1e75367bc5ccfdc48676.png)
 
 图中观察时间是7天，血肌酐的绝对值是0.1-1.0之间，如果按照每天每0.1来分，将是7×10=70个方程，然后看文中的描述：
+
 ![wenzhong1](http://ocmk8pdgu.bkt.clouddn.com/b5ceb8019ee372d45a97db80b8ae097b.png)
 
 跟文中描述的是一样的。这些方程都是一个逻辑回归模型，包括的混杂变量包括
+
 ![hunza](http://ocmk8pdgu.bkt.clouddn.com/5f4f8fedbec17efca1aa25c2b92b7bec.png)
 
 所有的混杂变量均取中位数，则可以算出一个调整后的死亡率（adjusted mortality）。将70个调整后的死亡率带入等高图那个矩阵中，死亡率用颜色的热度来表示，利用R语言的ggplot包就可绘制出：[教程入口](https://www.r-statistics.com/2016/07/using-2d-contour-plots-within-ggplot2-to-visualize-relationships-between-three-variables/)
