@@ -39,7 +39,7 @@ categeries: research
 
 ### 对结果的解释
 
-选一个最难的图1234：
+选一个最难的图：
 
 ![jieshi](http://ocmk8pdgu.bkt.clouddn.com/d86e59e99df190d8bbab81bdd4a0b4a9.png)
 
