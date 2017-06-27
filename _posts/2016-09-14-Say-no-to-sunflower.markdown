@@ -2,7 +2,7 @@
 layout: post
 title: Say no to sunflower --如何利用PC和便携装置搭建工作环境
 data: 2016-09-14
-categeries: computer
+categories: computer
 ---
 我一直热衷于弄远程控制，因为家里有一台台式机：三代i5，后来升级到256G的SSD和12G的双通道内存，还有曾经风靡一时的AMD 7850的性价比独立显卡。用起来非常得心应手。开机只需要5s，装了Total Commender和Autohotkey，以及dropbox，Rstudio，listery等等整个生态平台。但是我又不是随时在家里，笔记本用起来，体验太差，打开一个软件卡半天，受不了。
 

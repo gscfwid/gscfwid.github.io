@@ -2,7 +2,7 @@
 layout: post
 title: Jungle or Prairie
 data: 2016-09-14 10:47
-categeries: computer
+categories: computer
 ---
 我这个人比较偏执，偏执到容不得不公平的碾压。
 

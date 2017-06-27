@@ -2,7 +2,7 @@
 layout: post
 date: 2017-01-11 23:30
 title: 等高图在数据挖掘中的应用
-categeries: research
+categories: research
 ---
 老规矩，先将范文贴出来：[https://www.dropbox.com/s/as9udtdm0vhnc92/akin.pdf?dl=0]
 ![title](http://ocmk8pdgu.bkt.clouddn.com/e56348530f105c39c608afd0a7f8deec.png)

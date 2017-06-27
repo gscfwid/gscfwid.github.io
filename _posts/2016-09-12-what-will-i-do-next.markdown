@@ -2,7 +2,7 @@
 layout: post
 title: 我现在所欠缺的(2016-09-17更新)
 date: 2016-09-12
-categeries: beginning
+categories: beginning
 ---
 就目前我的知识层次，接下来我将完成：
 

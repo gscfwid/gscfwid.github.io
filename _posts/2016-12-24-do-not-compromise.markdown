@@ -2,7 +2,7 @@
 layout: post
 date: 2016-12-24 12:30
 title: 性格决定你需要自强不息
-categeries: bread&milk
+categories: bread&milk
 ---
 终于有一个比较完整的周末，说这话其实并不能怪任何人。因为时间很可贵，时间怎么分配是我自己决定的。
 

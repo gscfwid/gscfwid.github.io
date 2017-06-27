@@ -2,7 +2,7 @@
 layout: post
 date: 2016-10-22 22:25
 title: 我的kindle使用经验
-categeries: 教程
+categories: 教程
 ---
 对kindle的感觉很复杂，怎么说呢，又爱又恨。因为有些功能它做到了极致，而有些又实在让人捉急。像对windows，大部分都是满意的，但没有特别极致的感觉；对macbook，有极致的感觉，但没有捉急的感觉。唯独kindle的感情如此复杂。
 
