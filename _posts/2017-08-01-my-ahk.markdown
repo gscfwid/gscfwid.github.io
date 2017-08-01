@@ -1,0 +1,75 @@
+---
+layout: post
+date: 2017-08-01 23:35
+title: 我用的几个autohotkey脚本
+categories: computer
+---
+
+autohotkey（AHK)对于win用户来说是一个神器，它用一种编程的理念去管理自己的computer。入门教程可自行谷歌之，在这里我直接贴上自己常用的一些脚本。
+
+AHK可以彻底解放几个按钮，如大小写切换的capslock和tab键，本来在win自带快捷键中，这两个鲜有组合键，因此很多自己设置的快捷键都可围绕这两个按键展开。
+
+1. 首先是最基本的打开谷歌大法
+> 打开google（capslock+1）
+> Run http://www.google.com
+> return
+
+2. 用谷歌搜索选中内容
+> CapsLock & g::
+> Send ^c
+> Run http://www.google.com/search?q=%clipboard%
+> return
+
+3. 双击鼠标最大化切换
+> WinStatus:=0
+RButton::
+KeyWait, RButton ; 松开鼠标右键后才继续执行下面的代码
+keyWait, RButton, D T0.15 ; 在 100 毫秒内等待再次按下鼠标右键，可以设置一个自己觉得适合的等待时间。
+If ErrorLevel
+Click, Right
+Else
+{
+if WinStatus=0
+{
+WinMaximize , A
+WinStatus:=1
+}
+else
+{
+WinRestore ,A
+WinStatus:=0
+}
+}
+Return
+!m::
+if WinStatus=0
+{
+WinMaximize , A
+WinStatus:=1
+}
+else
+{
+WinRestore ,A
+WinStatus:=0
+}
+return
+
+4. 有道词典搜索选中内容
+> CapsLock & y::
+send ^c
+Run http://www.youdao.com/
+winwaitactive,有道
+sleep,100
+send ^v{enter}
+return
+
+5. 搜索选中期刊的if值
+> CapsLock & i::
+send ^c
+Run http://www.geenmedical.com/sj_search
+winwaitactive,SCI期刊
+sleep,100
+send {Tab}{Tab}{Tab}{Tab}^v{Enter}
+return
+
+以上几个脚本我较为常用，但有时候某种功能可以有很多种打开方式，不会选择用ahk，因此对于它我并没有用到完美。有时候，不苛求完美，只要求实用往往更加简单粗暴。
