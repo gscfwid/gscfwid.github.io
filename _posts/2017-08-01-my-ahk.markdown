@@ -22,7 +22,7 @@ Send ^c
 Run http://www.google.com/search?q=%clipboard%
 return
 ```
-3. 双击鼠标最大化切换
+3. 双击鼠标右键最大化切换
 ```
 WinStatus:=0
 RButton::
