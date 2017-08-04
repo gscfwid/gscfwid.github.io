@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-08-04 21:48
-title: 我使用的及格atom插件
+title: 我使用的几个atom插件
 categories: computer
 ---
 
