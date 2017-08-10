@@ -1,0 +1,98 @@
+---
+layout: post
+date: 2017-08-09 19:48
+title: 微信好友信息简单汇总
+categories: computer
+---
+最近看到一篇教程[一件有趣的事：我用 Python 爬了爬自己的微信朋友](https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657428155&idx=3&sn=de99d2d605090076670d535680b95e40&chksm=bdd935aa8aaebcbc2e7827b7d82e0d203dabbfe30712fed251f70b2c8c3609591e59b5357a8b&mpshare=1&scene=1&srcid=0730WHLSOP7qWoOCLWvWMne8#rd)。顺便学习，我就果断在自己的温馨上复现一下。但这篇文章不会简单重复原文作者，会对某些部分做较详细的补充。
+
+该文主要利用了itchat模块，github上的项目[在此](https://github.com/littlecodersh/itchat)。这个API的初衷是为了接入微信机器人的，但其真正功能远远不止。它还可以做[群发助手，检测好友删除](http://python.jobbole.com/86532/)，包括今天我们要做的一些简单的信息汇总。
+
+利用文章中提供的代码：
+
+``` python
+# -*- coding: UTF-8 -*-
+
+import itchat
+itchat.login()
+friends = itchat.get_friends(update=True)[0:] #得到好友列表，friends是由很多个字典组成的列表，每个字典代表一个好友。字典的属性包括很多（其实就是我们点开好友信息里面的内容），不过有意义的基本就是今天要分析的这几个
+def get_var(var):
+    variable = []
+    for i in friends:
+        value = i[var]
+        variable.append(value)
+    return variable #定义获取属性的方法
+NickName = get_var("NickName")
+Sex = get_var('Sex')
+Province = get_var('Province')
+City = get_var('City')
+from pandas import DataFrame
+data = {'NickName': NickName, 'Sex': Sex, 'Province': Province, 'City': City}
+frame = DataFrame(data)
+frame.to_csv('data.csv', sep='|', encoding='UTF-8', index=True) # 获取到data.csv ，用来接下来的分析
+```
+
+将好友信息表单分析的结果展示如下：
+
+```
+library(ggplot)
+library(scales)
+ggplot(wechat)+ aes(x=Sex,y = ..prop..,fill = factor(..x..))+ geom_bar()+geom_text(aes(label=scales::percent(..prop..),y=..prop..),stat="count",vjust = -0.5, hjust = 0.5,color = "black")+scale_fill_manual(values =c("black", "skyblue","orange"),labels = c("其他","男性","女性"))+labs(x="性别",y="数量",title = "朋友圈性别分布",fill = "性别")+theme(axis.text.x = element_blank())+theme(plot.title = element_text(hjust = 0.5))
+```
+![gender_distr](http://ocmk8pdgu.bkt.clouddn.com/d0ae1e11c53cee92de30112999c702e6.png)
+
+```
+thetable <- as.data.frame(table(as.data.frame(wechat$Province))) #为了排列这里先做成频数表
+thetable[1,1] <- NA #加入缺失值标志
+thetable <- thetable[order(thetable[,2],decreasing = T),]  #按频数排列
+ggplot(thetable[1:10,])+aes(x=reorder(Var1,-Freq),y=Freq,fill = Var1)+geom_bar(stat='identity')+theme(plot.title = element_text(hjust = 0.5))+labs(x="省份",y="数量",title="好友省份分布",fill = "省份") # 这里记得stat="identity"
+```
+![provience](http://ocmk8pdgu.bkt.clouddn.com/f5d2a7ff04d0976e66203f1d6c80ece0.png)
+
+最后，利用票圈所有人的签名做了一个云词，代码如下：
+
+``` python
+# -*- coding: UTF-8 -*-
+import itchat
+itchat.login()
+friends = itchat.get_friends(update=True)[0:]
+def get_var(var):
+    variable = []
+    for i in friends:
+        value = i[var]
+        variable.append(value)
+    return variable #这段跟之前一样
+import re
+siglist = []
+for i in friends:
+    signature = i["Signature"].strip().replace("span","").replace("class","").replace("emoji","")
+    rep = re.compile("1f\d+\w*|[<>/=]")
+    signature = rep.sub("",signature)
+    siglist.append(signature)
+text = "".join(siglist) #利用一个循环获取所有人的签名，并用正则表达式进行数据清洗（这里直接拷贝的原文，因为不是太掌握正则表达）
+print text
+import jieba #结巴分词
+wordlist = jieba.cut(text, cut_all = True)
+word_space_split = " ".join(wordlist)
+import matplotlib.pyplot as plt
+from wordcloud import WordCloud, ImageColorGenerator #载入词云模块
+import numpy as np
+import PIL.Image as Image
+coloring = np.array(Image.open("./rgicon2.png")) #利用自己的头像
+my_wordcloud = WordCloud(background_color = "white", max_words = 1000, mask= coloring, max_font_size = 120, random_state = 42, scale = 2, font_path = "./msyh.ttc").generate(word_space_split) #背景色与头像的背景色一致就可以，参数包括最大词量，字的最大尺寸，random_state相当于seed，scale是放大倍数，字体一定不能省略，在系统字体复制一份到当前路径
+image_colors = ImageColorGenerator(coloring)
+plt.imshow(my_wordcloud.recolor(color_func = image_colors))
+plt.imshow(my_wordcloud)
+plt.axis("off")
+plt.show()
+```
+![wordcloud](http://ocmk8pdgu.bkt.clouddn.com/5a75144038f684681174d2c203ad41d8.png)
+
+---
+
+### 写在最后
+
+1. 利用python真的可以做很多事情，要好好学习；
+2. ggplot作图神器，必须掌握；
+3. 学无止境，越学习越觉得后怕，越觉得无知；
+4. 与君共勉
