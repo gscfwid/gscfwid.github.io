@@ -6,14 +6,22 @@ layout: default
     <h1>金河一去路千千,欲到天边更有天</h1>
     <input type="text" id="dashen1" placeholder="大神英文名">
     <input type="text" id="dashen2" placeholder="大神英文姓">
-    <input id="dashenbutton" type="submit" onclick="myFunction()">
+    <input id="dashenbutton1" type="submit" value="学校" onclick="myFunction1()">
+    <input id="dashenbutton2" type="submit" value="一院" onclick="myFunction2()">
 </div>
 <script>
-    function myFunction() {
+    function myFunction1() {
         var dashen1,dashen2, pubmedstr;
         dashen1 = document.getElementById("dashen1").value;
         dashen2 = document.getElementById("dashen2").value;
         pubmedstr = "https://www.ncbi.nlm.nih.gov/pubmed?term=(sun%20yat-sen%5BAffiliation%5D)%20AND%20"+dashen1+"%20"+dashen2+"%5BAuthor%5D";
+        window.open(pubmedstr,'_self');
+    }
+    function myFunction2() {
+        var dashen1,dashen2, pubmedstr;
+        dashen1 = document.getElementById("dashen1").value;
+        dashen2 = document.getElementById("dashen2").value;
+        pubmedstr = "https://www.ncbi.nlm.nih.gov/pubmed/?term=(the+first+affiliated+hospital+of+sun+yat-sen+university%5BAffiliation%5D)+AND+"+dashen1+"+"+dashen2+"%5BAuthor%5D";
         window.open(pubmedstr,'_self');
     }
 </script>
