@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+<style>
+#dashenbutton1,#dashenbutton2{
+    background-color: #7c34b7;
+    border: none;
+    color: white;
+    padding: 12px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#dashen1, #dashen2{
+    width: 35%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+</style>
+  <body>
+    {% include header_empty.html %}
+    <br>
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+<script id="dsq-count-scr" src="//gscfwid-github-io.disqus.com/count.js" async></script>
+</html>
