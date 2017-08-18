@@ -19,8 +19,9 @@ categories: computer
 首先放上我要爬取的网址： http://medu2011.com:8083/zsy/
 
 在爬取网页时，摆在初学者面前的一道槛就是“对需要登录的网站怎么爬取？”，尤其是”还需要验证码登录”。我查了很多相关的文章：
-> [如何用 Python 爬取需要登录的网站？](https://juejin.im/entry/566fdee660b2d0be157516c8)
-> [小试牛刀：使用Python模拟登录知乎](http://www.csuldw.com/2016/11/05/2016-11-05-simulate-zhihu-login/index.html)
+
+>- [如何用 Python 爬取需要登录的网站？](https://juejin.im/entry/566fdee660b2d0be157516c8)
+>- [小试牛刀：使用Python模拟登录知乎](http://www.csuldw.com/2016/11/05/2016-11-05-simulate-zhihu-login/index.html)
 
 这是我刚开始的思路，以为在访问‘登陆后可以请求到的数据’时，直接在post请求中发送包含用户名和密码的数据包就可以了，结果不行。原因不是太清楚，网上说服务器会认请求包的头文件，但是我设置了仍然不可以，我后来觉得是cookie（网页缓存）的原因。
 
