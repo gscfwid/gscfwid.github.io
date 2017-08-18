@@ -2,7 +2,7 @@
 layout: post
 date: 2017-08-11 19:48
 title: 塞纳河畔 左岸咖啡
-categories: bread & milk
+categories: bread&milk
 ---
 
 ## 塞纳河畔
