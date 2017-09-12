@@ -11,3 +11,5 @@ github_username:  gscfwid
 
 # Build settings
 markdown: kramdown
+paginate: 8
+paginate_path: "gscfwid.github.io/page:num"
