@@ -33,9 +33,9 @@ layout: default
     {% if page == paginator.page %}
         <li><em>{{ page }}</em></li>
     {% elsif page == 1 %}
-        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+        <li><a href="{{ nil | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
     {% else %}
-        <li><a href="{{ paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+        <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
     {% endif %}
   {% endfor %}
 
