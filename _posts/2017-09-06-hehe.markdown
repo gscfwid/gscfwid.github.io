@@ -1,5 +1,5 @@
 ---
-layout: post_empty
+layout: post_hidden
 date: 2017-09-06 22:30
 title: 我们的匿名吧阵亡了
 categories: bread&milk
