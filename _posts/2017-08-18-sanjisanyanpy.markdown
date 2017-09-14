@@ -1,5 +1,5 @@
 ---
-layout: post_empty
+layout: post
 date: 2017-08-18 21:30
 title: 写个爬虫对付三基三严
 categories: computer

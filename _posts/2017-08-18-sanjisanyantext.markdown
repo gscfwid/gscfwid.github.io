@@ -1,5 +1,5 @@
 ---
-layout: post_empty
+layout: post
 date: 2017-08-18 21:10
 title: 三基三严网站麻醉爬取试题
 categories: 工作
