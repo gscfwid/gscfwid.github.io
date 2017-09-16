@@ -2,7 +2,7 @@
 layout: post
 date: 2017-08-18 21:30
 title: 写个爬虫对付三基三严
-categories: computer
+categories: computer 教程
 ---
 
 刚开始学python，于是想搞搞之前一直想搞的事情，比如把医院每年都折磨人的三基三严考试题目爬下来以后随手复习。今天终于搞定了，于是想总结一下。
@@ -30,7 +30,7 @@ categories: computer
 最后我是直接引用手动登录后的cookie进行模拟登录，最终成功。参考教材如下：
 > [Python使用requests库模拟登陆网站的方式--以豆瓣为例](http://blog.csdn.net/u011659379/article/details/48133121)
 
-登录后我直接进到我需要爬取内容的试题网页：
+登录后我直接进到我需要爬取内容的试题网页（按F12或右键‘检查’转到开发工具，具体内容，请查阅chrome开发工具相关教程）：
 
 ![network](http://ocmk8pdgu.bkt.clouddn.com/c18e8531fffdc6ec47aa3d9f87882df6.png)
 

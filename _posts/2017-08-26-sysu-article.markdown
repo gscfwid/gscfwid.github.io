@@ -2,7 +2,7 @@
 layout: post
 date: 2017-08-26 23:30
 title: 挖点好玩的
-categories: computer
+categories: computer research
 ---
 ### 写在前面
 

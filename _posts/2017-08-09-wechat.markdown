@@ -2,7 +2,7 @@
 layout: post
 date: 2017-08-09 19:48
 title: 微信好友信息简单汇总
-categories: computer
+categories: computer 教程
 ---
 最近看到一篇教程[一件有趣的事：我用 Python 爬了爬自己的微信朋友](https://mp.weixin.qq.com/s?__biz=MjM5MDE3OTk2Ng==&mid=2657428155&idx=3&sn=de99d2d605090076670d535680b95e40&chksm=bdd935aa8aaebcbc2e7827b7d82e0d203dabbfe30712fed251f70b2c8c3609591e59b5357a8b&mpshare=1&scene=1&srcid=0730WHLSOP7qWoOCLWvWMne8#rd)。顺便学习，我就果断在自己的微信上复现一下。但这篇文章不会简单重复原文作者，会对某些部分做较详细的补充。
 
