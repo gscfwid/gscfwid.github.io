@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-10-09 23:09
-title: 16-17年度广州医学类国自然情况报告
+title: 16-17年度广东省医学类国自然情况报告
 categories: 工作
 ---
 NSFC：国自然
@@ -101,7 +101,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">16-17年度广州医学类国自然情况报告</h1>
+<h1 class="title toc-ignore">16-17年度广东医学类国自然情况报告</h1>
 <h4 class="author"><em>Gao</em></h4>
 <h4 class="date"><em>2017/10/9</em></h4>
 
