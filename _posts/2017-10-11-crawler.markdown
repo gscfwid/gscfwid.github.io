@@ -1,0 +1,52 @@
+---
+layout: post
+date: 2017-10-11 21:00
+title: 一个小爬虫爬取限定条件的国自然项目
+categories: computer 教程
+---
+前段时间接到一条任务：统计2017年和2016年广东所有单位的医学科学部国自然立项项目。在搜索无果后最终决定自己动手丰衣足食。
+
+### 一开始遇到的问题
+
+下面我会分享代码和最终的报告。不过为了提高教程的质量，我先抛出几个问题。
+
+1. 如何提取广东的所有单位？
+2. 如何判断是否是医学相关性？
+3. 如何选择爬取网站
+
+第二个问题其实一搜就出来了，从项目编号就可以匹配到，项目编号为817开头就是2017年医学类项目，其中第一个数字代表医学，后两位代表17年。
+
+在解决第一个问题时，我发现了[官网](https://isisn.nsfc.gov.cn/egrantindex/funcindex/prjsearch-list)上点开单位名称后面那个图标，会弹出单位选择来，然后利用F12大法发现这其实是一个post请求，并且不需要超烦的验证码，于是就迎刃而解。
+
+对于第三个问题，我浏览了一圈，github上hamdichau上传了一个项目[NSFC](https://github.com/hamdichau/NSFC)，但是是针对已结题的项目。而且我一看到验证码就烦，尤其是这种每次搜索都要输一次验证码的。另外还有几个网站，一个是科学网，怎么也登陆不上去，丁香园，只有2015年以前的数据。最后，我把目标定格在了[legpub上——美国ACCDON公司旗下](http://www.letpub.com.cn/)，高端大气上档次的论文公司。无需登陆，无需验证码，连cookie都不需要搞了，这里必须大力推荐一下。
+
+### 代码分享和报告
+
+[报告地址其实是前面的一篇博文](https://gscfwid.github.io/%E5%B7%A5%E4%BD%9C/2017/10/09/nsfc.html)
+
+[代码地址]()
+
+### 两个重要的问题
+
+第一个是关于爬取过程中出现的"ConnectionError: HTTPSConnectionPool"的错误，查了一下，原因可能是远端服务器探测到访问太频繁所以拒绝了访问，解决方法如下：
+
+``` python
+try:
+    page = requests.get(url)
+except:
+    print("Connection refused by the server..")
+    print("Let me sleep for 5 seconds")
+    print("ZZzzzz...")
+    time.sleep(5)
+    print("Was a nice sleep, now let me continue...")
+    continue
+```
+
+非常调皮，哈哈。Try语句是一个非常有用的语句，由于技术原因，本次爬取过程持续了5个小时，如果出现一次错误，就需要重新再来，而这段代码能完美解决问题。逻辑很简单，就是如果错误就重新连接。关于try的用法，在下面的文章中有很详细的阐述。
+
+[Python 學習筆記 (7) 異常處理](http://allenchien.logdown.com/posts/425530)
+
+另外一个问题，刚刚说的，爬取时间太长。也大概查了一下，主要还是因为beautifulsoup的解析时间过长。解决办法可以用soupstrainer对象进行部分解析。但由于后来没有再爬，所以硬着头皮爬了一晚，并没有再继续探索。另外，可能代码中有较多的循环，也会拖累速度。
+
+### 参考内容
+[Max retries exceeded with URL (from stackoverflow)](https://stackoverflow.com/questions/23013220/max-retries-exceeded-with-url)
