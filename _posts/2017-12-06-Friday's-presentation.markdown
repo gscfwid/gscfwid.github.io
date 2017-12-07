@@ -5,7 +5,10 @@ title: 周五汇报
 categories: 工作
 ---
 
-## 镇痛查房汇报
+## 镇痛查房和病历返修汇报
+
+链接地址：https://mubu.com/doc/iDl5ODnAh
+
 
 ## 请假系统介绍
 
@@ -15,21 +18,23 @@ categories: 工作
 
 链接地址：https://339182446.docs.qq.com/CHiGT171Gl4
 
-### 第一种方式：在小丘隔壁电脑上登记或者用自己的电脑打开以上链接
+### 第一种方式：用自己的电脑打开以上链接（或小丘隔壁电脑上登记）
 
-文件放在桌面上(需要截图)：
-
-需要QQ号登陆（图片）
-
-然后找准到位置填入自己的名字（图片）
+![小丘隔壁电脑桌面](http://ocmk8pdgu.bkt.clouddn.com/12e5e1c87e7ece6aea5f230a31754cc6.png)
 
 ### 第二种方式：手机下载app ‘TIM’
 
-TIM是QQ的商务版，扫码或者点击链接后有提示安装TIM，用QQ号登陆后重新点击链接或者扫码，再填入姓名
+TIM是QQ的商务版，扫码或者点击链接后有提示安装TIM，用QQ号登陆
 
-### 第三种方式：手机不需要下载TIM
+![TIM界面](http://ocmk8pdgu.bkt.clouddn.com/bd33298f17fe3173de3bcd077231c8d8.png)
 
-用浏览器打开该链接，然后点击完整版（或电脑视图）（不同手机叫法不同），再用QQ号登陆进行填写
+![第二步](http://ocmk8pdgu.bkt.clouddn.com/ad0550a6f6c9a6979fe1351cd1009dea.png)
+
+![第三步](http://ocmk8pdgu.bkt.clouddn.com/fa05e210adb85299d9c96f14d6d2c764.png)
+
+然后填入自己姓名
+
+![填入姓名](http://ocmk8pdgu.bkt.clouddn.com/e52d46c945105d6e1032b5a3f56e85ef.png)
 
 ### 注意事项
 
