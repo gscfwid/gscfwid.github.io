@@ -26,9 +26,9 @@ categories: 工作
 
 TIM是QQ的商务版，扫码或者点击链接后有提示安装TIM，用QQ号登陆
 
-![TIM界面](http://ocmk8pdgu.bkt.clouddn.com/bd33298f17fe3173de3bcd077231c8d8.png)
+![TIM界面](http://ocmk8pdgu.bkt.clouddn.com/bd33298f17fe3173de3bcd077231c8d8.png =300)
 
-![第二步](http://ocmk8pdgu.bkt.clouddn.com/ad0550a6f6c9a6979fe1351cd1009dea.png)
+![第二步](http://ocmk8pdgu.bkt.clouddn.com/ad0550a6f6c9a6979fe1351cd1009dea.png =300)
 
 ![第三步](http://ocmk8pdgu.bkt.clouddn.com/fa05e210adb85299d9c96f14d6d2c764.png)
 
