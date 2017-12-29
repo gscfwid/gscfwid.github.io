@@ -20,9 +20,9 @@ categories: 工作
 
 TIM是QQ的商务版，扫码或者点击链接后有提示安装TIM，用QQ号登陆
 
-<img src="http://ocmk8pdgu.bkt.clouddn.com/ad0550a6f6c9a6979fe1351cd1009dea.png" width="300px" />
-
 然后点击首页的+，扫一扫本页最上方的二维码，即可直接编辑，在相应位置填入自己姓名
+
+<img src="http://ocmk8pdgu.bkt.clouddn.com/ab3317c2e506c77fa3225e2423c557ba.png" width="300px" />
 
 <img src="http://ocmk8pdgu.bkt.clouddn.com/e52d46c945105d6e1032b5a3f56e85ef.png" width="300px" />
 
