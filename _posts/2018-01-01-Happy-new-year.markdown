@@ -35,7 +35,7 @@ rpy2是python的一个专门为了与R语言通话的包，在安装的过程中
 conda install rpy2
 ```
 
-魔法命令是jupyter的一个非常强大的功能。在这里我们需要的是切换内核，将python内核暂时切换为R语言。当然，首先要安装R语言的内核：
+魔法命令是jupyter的一个非常强大的功能。在这里我们需要的是一个魔法命令是切换内核，将jupyter内核暂时切换为R语言。当然，首先要安装R语言的内核：
 
 ``` terminal中
 conda install -c r r-essentials
@@ -43,7 +43,7 @@ conda install -c r r-essentials
 然后在jupyter中，内核为python
 
 ``` jupyter
-%%R
+%%R #此为切换内核的命令
 x <- c(1:5)
 x
 ```
