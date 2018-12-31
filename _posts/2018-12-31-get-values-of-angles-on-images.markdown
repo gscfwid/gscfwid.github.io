@@ -77,7 +77,7 @@ for x,y,r,t1,t2 in zip(X,Y,R,T1,T2):
     plt.close('all')
   ```
 
-同样的办法生成测试集，关于数据集的大小我后面讲。然后我得到了5000张下图中的这些图片：
+同样的办法生成测试集。然后我得到了5000张下图中的这些图片：
 
 ![angles](https://raw.githubusercontent.com/gscfwid/Get-the-value-of-angle-in-images/master/readme_pics/angles.png)
 
