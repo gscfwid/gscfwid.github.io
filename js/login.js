@@ -22,7 +22,7 @@ async function getCredentials() {
     try {
         const response = await fetch("static/pwd");
         const text = await response.text();
-        const [username, passwordHash] = text.split(":");
+        const [username, passwordHash] = text.trim().split(":");
 
         return {
             username,
