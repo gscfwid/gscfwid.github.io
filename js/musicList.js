@@ -504,4 +504,157 @@ var musicList = [
             }
 ]
     }
+    ,
+    {
+        id: "9529",
+        name: "S.H.E",
+        cover: "images/album.png",
+        creatorName: "EXP",
+        creatorAvatar: "EXP",
+        item: [
+            {
+                        "id": "592ab755e375d23ab0e869d8602260df",
+                        "name": "S.H.E [ 五月天 Mayday ] Official Music Video [SstOzs4y6Eg]",
+                        "artist": "華研國際",
+                        "album": "",
+                        "url": "static/S.H.E/S.H.E [ 五月天 Mayday ] Official Music Video [SstOzs4y6Eg].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "592ab755e375d23ab0e869d8602260df",
+                        "pic_id": "",
+                        "lyric_id": ""
+            },
+            {
+                        "id": "91bcaadcec60dd81323d5d5ef79677cd",
+                        "name": "Super Star [qL7BMyGAcFc]",
+                        "artist": "S.H.E",
+                        "album": "愛而為一演唱會",
+                        "url": "static/S.H.E/Super Star [qL7BMyGAcFc].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "91bcaadcec60dd81323d5d5ef79677cd",
+                        "pic_id": "",
+                        "lyric_id": ""
+            },
+            {
+                        "id": "ae32e846fc8b8805b8f846f9b24d0493",
+                        "name": "不想長大 [sfezPRNSKRA]",
+                        "artist": "S.H.E",
+                        "album": "不想長大",
+                        "url": "static/S.H.E/不想長大 [sfezPRNSKRA].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "ae32e846fc8b8805b8f846f9b24d0493",
+                        "pic_id": "",
+                        "lyric_id": ""
+            },
+            {
+                        "id": "d20fce67fb6d91cf27d5447d7680446d",
+                        "name": "中國話 [3baofXUpIqM]",
+                        "artist": "S.H.E",
+                        "album": "Play",
+                        "url": "static/S.H.E/中國話 [3baofXUpIqM].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "d20fce67fb6d91cf27d5447d7680446d",
+                        "pic_id": "",
+                        "lyric_id": ""
+            },
+            {
+                        "id": "7899c7ab1eb0952465b463f73ca584a3",
+                        "name": "半糖主義 [o38maTdAXJk]",
+                        "artist": "S.H.E",
+                        "album": "SUPER STAR",
+                        "url": "static/S.H.E/半糖主義 [o38maTdAXJk].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "7899c7ab1eb0952465b463f73ca584a3",
+                        "pic_id": "",
+                        "lyric_id": ""
+            },
+            {
+                        "id": "db4c96d8a8128fcaffc8bf2063f645c0",
+                        "name": "安靜了 [jdwGTGMP7IE]",
+                        "artist": "S.H.E",
+                        "album": "我的電臺FM S.H.E",
+                        "url": "static/S.H.E/安靜了 [jdwGTGMP7IE].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "db4c96d8a8128fcaffc8bf2063f645c0",
+                        "pic_id": "",
+                        "lyric_id": ""
+            },
+            {
+                        "id": "415de87ef2c656f82fb30a0d997d49b0",
+                        "name": "愛呢 [DRDT4BPIL2M]",
+                        "artist": "S.H.E",
+                        "album": "美麗新世界",
+                        "url": "static/S.H.E/愛呢 [DRDT4BPIL2M].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "415de87ef2c656f82fb30a0d997d49b0",
+                        "pic_id": "",
+                        "lyric_id": ""
+            },
+            {
+                        "id": "e79fd1b8fb6a60d54e838ecdce11d60d",
+                        "name": "戀人未滿 [Uxv6TZRXRmo]",
+                        "artist": "S.H.E",
+                        "album": "女生宿舍",
+                        "url": "static/S.H.E/戀人未滿 [Uxv6TZRXRmo].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "e79fd1b8fb6a60d54e838ecdce11d60d",
+                        "pic_id": "",
+                        "lyric_id": ""
+            },
+            {
+                        "id": "239e1ae412f6c3d6ddc2b171212bb4f1",
+                        "name": "波斯貓 [2ZKxY_W39k4]",
+                        "artist": "S.H.E",
+                        "album": "移動城堡演唱會",
+                        "url": "static/S.H.E/波斯貓 [2ZKxY_W39k4].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "239e1ae412f6c3d6ddc2b171212bb4f1",
+                        "pic_id": "",
+                        "lyric_id": ""
+            },
+            {
+                        "id": "4a143556983400e3ce4a0f866af53a46",
+                        "name": "熱帶雨林 [-vYQGxzNQmg]",
+                        "artist": "S.H.E",
+                        "album": "青春株式會社",
+                        "url": "static/S.H.E/熱帶雨林 [-vYQGxzNQmg].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "4a143556983400e3ce4a0f866af53a46",
+                        "pic_id": "",
+                        "lyric_id": ""
+            },
+            {
+                        "id": "dbe02b949b93787f5b95adac6703209e",
+                        "name": "紫藤花 [CKw1jimI1l8]",
+                        "artist": "S.H.E",
+                        "album": "Forever 新歌+精選",
+                        "url": "static/S.H.E/紫藤花 [CKw1jimI1l8].mp3",
+                        "pic": "",
+                        "lyric": "",
+                        "source": "local",
+                        "url_id": "dbe02b949b93787f5b95adac6703209e",
+                        "pic_id": "",
+                        "lyric_id": ""
+            }
+]
+    }
 ];
