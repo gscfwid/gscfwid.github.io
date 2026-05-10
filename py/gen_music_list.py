@@ -127,10 +127,12 @@ def now() :
     return datetime.now().strftime('%Y%m%d%H%M%S')
 
 
-def del_music_lists() :
+def del_music_lists(keep_latest=5) :
     path = f"{MUSIC_DIR}/{MUSIC_LIST_PERFIX}*"  # 使用 glob 来找到所有以'music_list'开头的文件
-    files = glob.glob(path)
-    for file in files:
+    files = sorted(glob.glob(path), key=os.path.getmtime, reverse=True)
+
+    # 保留最近几份歌单 JSON，避免用户浏览器缓存到旧版 player.js 时，因为旧 JSON 被立即删除而出现“歌单读取失败”
+    for file in files[keep_latest:]:
         try:
             os.remove(file)
         except:
