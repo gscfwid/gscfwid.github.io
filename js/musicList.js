@@ -594,6 +594,32 @@ var musicList = [
                 url_id: "dbe02b949b93787f5b95adac6703209e",
                 pic_id: "",
                 lyric_id: ""
+            },
+            {
+                id: "e64ac3fddac6babdfd7775c2b265520c",
+                name: "S.H.E  [白色戀歌 White Love Song] Official Music Video [fQ-jdYBV-k8]",
+                artist: "華研國際",
+                album: "",
+                url: "static/S.H.E/S.H.E  [白色戀歌 White Love Song] Official Music Video [fQ-jdYBV-k8].mp3",
+                pic: "",
+                lyric: "",
+                source: "local",
+                url_id: "e64ac3fddac6babdfd7775c2b265520c",
+                pic_id: "",
+                lyric_id: ""
+            },
+            {
+                id: "6feeeca44f1c3c8008547cfd530db733",
+                name: "魔力 [HMy3VDfnlCY]",
+                artist: "S.H.E",
+                album: "美麗新世界",
+                url: "static/S.H.E/魔力 [HMy3VDfnlCY].mp3",
+                pic: "",
+                lyric: "",
+                source: "local",
+                url_id: "6feeeca44f1c3c8008547cfd530db733",
+                pic_id: "",
+                lyric_id: ""
             }
         ]
     },
