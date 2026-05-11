@@ -709,5 +709,27 @@ var musicList = [
                 lyric_id: ""
             }
         ]
+    },
+    {
+        id: "9531",
+        name: "B站纯音乐",
+        cover: "images/album.png",
+        creatorName: "EXP",
+        creatorAvatar: "EXP",
+        item: [
+            {
+                id: "ea03f16d3aa465d76aa7027255153331",
+                name: "“烟花易冷，人事易分”，此刻，中式意境已成！ [BV1TrsPzMEY9_p1]",
+                artist: "碰碰彭碰彭",
+                album: "",
+                url: "static/B站纯音乐/“烟花易冷，人事易分”，此刻，中式意境已成！ [BV1TrsPzMEY9_p1].mp3",
+                pic: "",
+                lyric: "",
+                source: "local",
+                url_id: "ea03f16d3aa465d76aa7027255153331",
+                pic_id: "",
+                lyric_id: ""
+            }
+        ]
     }
 ];
