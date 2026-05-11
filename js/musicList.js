@@ -730,6 +730,19 @@ var musicList = [
                 pic_id: "",
                 lyric_id: ""
             }
+            ,{
+                id: "399548b990a8e933ec6ba29a4c29c80b",
+                name: "泛音高能！《可爱女人》美爆的「指弹吉他」！周董听了也心动！ [BV1dSRQBGEsb_p1]",
+                artist: "theiaの阿旋酱",
+                album: "",
+                url: "static/B站纯音乐/泛音高能！《可爱女人》美爆的「指弹吉他」！周董听了也心动！ [BV1dSRQBGEsb_p1].mp3",
+                pic: "",
+                lyric: "",
+                source: "local",
+                url_id: "399548b990a8e933ec6ba29a4c29c80b",
+                pic_id: "",
+                lyric_id: ""
+            }
         ]
     }
 ];
