@@ -620,6 +620,19 @@ var musicList = [
                 "url_id": "6feeeca44f1c3c8008547cfd530db733",
                 "pic_id": "",
                 "lyric_id": ""
+            },
+            {
+                "id": "407443e8ac8aa00af595921ceb9a67f9",
+                "name": "S.H.E [鎖住時間 Stay with me] Official Music Video [48-0YRER610]",
+                "artist": "華研國際",
+                "album": "",
+                "url": "static/S.H.E/S.H.E [鎖住時間 Stay with me] Official Music Video [48-0YRER610].mp3",
+                "pic": "",
+                "lyric": "",
+                "source": "local",
+                "url_id": "407443e8ac8aa00af595921ceb9a67f9",
+                "pic_id": "",
+                "lyric_id": ""
             }
         ]
     },
