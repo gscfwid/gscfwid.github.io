@@ -466,19 +466,6 @@ var musicList = [
                 "lyric_id": ""
             },
             {
-                "id": "91bcaadcec60dd81323d5d5ef79677cd",
-                "name": "Super Star [qL7BMyGAcFc]",
-                "artist": "S.H.E",
-                "album": "愛而為一演唱會",
-                "url": "static/S.H.E/Super Star [qL7BMyGAcFc].mp3",
-                "pic": "",
-                "lyric": "",
-                "source": "local",
-                "url_id": "91bcaadcec60dd81323d5d5ef79677cd",
-                "pic_id": "",
-                "lyric_id": ""
-            },
-            {
                 "id": "ae32e846fc8b8805b8f846f9b24d0493",
                 "name": "不想長大 [sfezPRNSKRA]",
                 "artist": "S.H.E",
@@ -631,6 +618,32 @@ var musicList = [
                 "lyric": "",
                 "source": "local",
                 "url_id": "407443e8ac8aa00af595921ceb9a67f9",
+                "pic_id": "",
+                "lyric_id": ""
+            },
+            {
+                "id": "9706f2fbb7cbc18f602fcbbe00fdfda3",
+                "name": "S.H.E [ Belief ] Official MV [oqgeaynF30w]",
+                "artist": "華研國際",
+                "album": "",
+                "url": "static/S.H.E/S.H.E [ Belief ] Official MV [oqgeaynF30w].mp3",
+                "pic": "",
+                "lyric": "",
+                "source": "local",
+                "url_id": "9706f2fbb7cbc18f602fcbbe00fdfda3",
+                "pic_id": "",
+                "lyric_id": ""
+            },
+            {
+                "id": "31e9ff9ecbe8f732f5e15c4f88a161b9",
+                "name": "S.H.E [沿海公路的出口 Coastal Road Exit] Official Music Video [-Ve9jP2IS_c]",
+                "artist": "華研國際",
+                "album": "",
+                "url": "static/S.H.E/S.H.E [沿海公路的出口 Coastal Road Exit] Official Music Video [-Ve9jP2IS_c].mp3",
+                "pic": "",
+                "lyric": "",
+                "source": "local",
+                "url_id": "31e9ff9ecbe8f732f5e15c4f88a161b9",
                 "pic_id": "",
                 "lyric_id": ""
             }
