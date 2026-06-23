@@ -1017,5 +1017,79 @@ var musicList = [
                 "lyric_id": ""
             }
         ]
+    },
+    {
+        "id": "9532",
+        "name": "许嵩新歌",
+        "cover": "images/album.png",
+        "creatorName": "EXP",
+        "creatorAvatar": "EXP",
+        "item": [
+            {
+                "id": "2ac723378189e97b270107a5e6d9b245",
+                "name": "許嵩【前程似錦】HD 高清官方歌詞版 MV [4drQ5IQpJAY]",
+                "artist": "太合音樂 Taihe Music-精選",
+                "album": "",
+                "url": "static/许嵩/許嵩【前程似錦】HD 高清官方歌詞版 MV [4drQ5IQpJAY].mp3",
+                "pic": "",
+                "lyric": "",
+                "source": "local",
+                "url_id": "2ac723378189e97b270107a5e6d9b245",
+                "pic_id": "",
+                "lyric_id": ""
+            },
+            {
+                "id": "96dbf28e59db80fb8f059abd46845a1b",
+                "name": "許嵩【洛陽紙】HD 高清官方歌詞版 MV [j4JWz_G30rA]",
+                "artist": "太合音樂 Taihe Music-精選",
+                "album": "",
+                "url": "static/许嵩/許嵩【洛陽紙】HD 高清官方歌詞版 MV [j4JWz_G30rA].mp3",
+                "pic": "",
+                "lyric": "",
+                "source": "local",
+                "url_id": "96dbf28e59db80fb8f059abd46845a1b",
+                "pic_id": "",
+                "lyric_id": ""
+            },
+            {
+                "id": "018b9a246b2931855a1b0d042423bc70",
+                "name": "許嵩【粗糙】HD 高清官方歌詞版 MV [4qXsGO1C9V0]",
+                "artist": "太合音樂 Taihe Music-精選",
+                "album": "",
+                "url": "static/许嵩/許嵩【粗糙】HD 高清官方歌詞版 MV [4qXsGO1C9V0].mp3",
+                "pic": "",
+                "lyric": "",
+                "source": "local",
+                "url_id": "018b9a246b2931855a1b0d042423bc70",
+                "pic_id": "",
+                "lyric_id": ""
+            },
+            {
+                "id": "11c192f18abec7ac781f4b4a5112e672",
+                "name": "許嵩【皮下】HD 高清官方歌詞版 MV [68nZzvhwJQ0]",
+                "artist": "太合音樂 Taihe Music-精選",
+                "album": "",
+                "url": "static/许嵩/許嵩【皮下】HD 高清官方歌詞版 MV [68nZzvhwJQ0].mp3",
+                "pic": "",
+                "lyric": "",
+                "source": "local",
+                "url_id": "11c192f18abec7ac781f4b4a5112e672",
+                "pic_id": "",
+                "lyric_id": ""
+            },
+            {
+                "id": "f9958daa85aaa9a1d55d7182ee5e6cbd",
+                "name": "許嵩【老歌】HD 高清官方歌詞版 MV [FZ95dJMJ7EI]",
+                "artist": "太合音樂 Taihe Music-精選",
+                "album": "",
+                "url": "static/许嵩/許嵩【老歌】HD 高清官方歌詞版 MV [FZ95dJMJ7EI].mp3",
+                "pic": "",
+                "lyric": "",
+                "source": "local",
+                "url_id": "f9958daa85aaa9a1d55d7182ee5e6cbd",
+                "pic_id": "",
+                "lyric_id": ""
+            }
+        ]
     }
 ];
